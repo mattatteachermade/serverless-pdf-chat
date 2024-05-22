@@ -13,7 +13,7 @@ document_table = ddb.Table(DOCUMENT_TABLE)
 memory_table = ddb.Table(MEMORY_TABLE)
 logger = Logger()
 
-
+#force build
 @logger.inject_lambda_context(log_event=True)
 def lambda_handler(event, context):
     user_id = event["requestContext"]["authorizer"]["claims"]["sub"]
