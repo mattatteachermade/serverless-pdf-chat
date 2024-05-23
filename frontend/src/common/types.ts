@@ -12,6 +12,7 @@ export interface Document {
   }[];
 }
 
+
 export interface Conversation {
   conversationid: string;
   document: Document;
